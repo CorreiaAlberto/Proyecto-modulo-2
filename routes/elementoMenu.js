@@ -27,7 +27,7 @@ router.get('/menu/:id/editar', async (req, res, next) => {
     console.log(menu)
     const elementosMenu = await ElementoMenu.find({ idCategoria: req.params.id });
     res.render('menu/editMenu', { elementosMenu: elementosMenu, categoria: categoria, idCategoria: req.params.id , 
-    menu:menu, isCarta: menu.tipoDeMenu=='carta'})
+    menu:menu, isCarta:menu.tipoDeMenu=='carta', tipo:menu.tipoDeMenu})
   } catch (err) {
     next(err)
   }

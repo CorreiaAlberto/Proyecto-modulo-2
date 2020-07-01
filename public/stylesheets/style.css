@@ -4,6 +4,9 @@ body {
 a {
   color: #00B7FF; }
 
+li {
+  list-style: none; }
+
 #boton-logout {
   border: none;
   background-color: #222;
@@ -377,6 +380,10 @@ footer {
 #prize {
   text-align: end; }
 
+.tipoDeMenuEscoger {
+  width: 40%;
+  margin: auto; }
+
 #menu-especial {
   width: 100%;
   color: white;
@@ -512,12 +519,5 @@ footer {
     margin-bottom: 4%; }
   #infoRestaurante {
     padding-top: 70px; } }
-
-nav ul {
-  display: flex; }
-
-nav li {
-  flex: auto;
-  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */

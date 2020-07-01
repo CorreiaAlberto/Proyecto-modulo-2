@@ -8,6 +8,10 @@ a {
   //HOME PAGE
 }
 
+li{
+  list-style: none;
+}
+
 #boton-logout {
   border: none;
   background-color: #222;
@@ -463,6 +467,11 @@ footer {
 
 #prize {
   text-align: end
+}
+
+.tipoDeMenuEscoger{
+  width: 40%;
+  margin: auto
 }
 
 //DISPLAY MENU ESPECIAL

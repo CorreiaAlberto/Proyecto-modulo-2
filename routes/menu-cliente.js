@@ -7,17 +7,6 @@ const Categoria = require('../models/modelo-categoria');
 const ElementoMenu = require('../models/modelo-elemento-menu');
 
 
-//RUTA DE LISTADO PARA BUSQUEDA
-// router.get('/listado', async (req, res, next) => {
-//   try {
-//     const restaurantes = await Restaurante.find();
-//     res.render('listado/listado', { restaurantes: restaurantes });
-//   }
-//   catch (error) {
-//     next(error)
-//   }
-// })
-
 
 router.get('/:pin', async (req, res, next) => {
   try {
@@ -58,7 +47,7 @@ router.get('/:pin', async (req, res, next) => {
     console.log("misMneus",misMenus)
     }
 
-    res.render('listado/restaurante', {
+    res.render('menu-cliente/restaurante', {
       menus: misMenus, restaurante: restaurante,
     })
   }
