@@ -63,8 +63,11 @@ $(document).ready(function () {
     else {
       $(this).parent().find(".labelNombreMenu").hide();
       $(this).parent().find(".inputNombreMenu").addClass("hidden");
+      $(this).parent().find(".inputInfoMenu").addClass("hidden");
+      $(this).parent().find(".labelInfoMenu").hide();
       $(this).parent().find(".labelPrecio").hide();
       $(this).parent().find(".inputPrecio").addClass("hidden");
+      
     }
   })
 
