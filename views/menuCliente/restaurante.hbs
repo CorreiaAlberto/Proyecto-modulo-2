@@ -1,8 +1,9 @@
 <div id="main-margin">
-<h1 class="Title">{{restaurante.nombre}}</h1>
-<div class="container">
-  <!--TITULO -->
+  <h1 class="Title">{{restaurante.nombre}}</h1>
+  <div class="container">
+    <!--TITULO -->
 
+<<<<<<< HEAD
   <!--LOGO -->
   <img id="logoMenuDisplay" src="{{restaurante.logoUrl}}">
   {{#each menus}}
@@ -34,27 +35,50 @@
 
 
   <div class="hidden menu-container">
+=======
+    <!--LOGO -->
+    <img id="logoMenuDisplay" src="{{restaurante.logoUrl}}">
+    {{#each menus}}
+>>>>>>> c2e6e44e30e367afd7f6b30ba007fb9e08667a57
 
+    <!--CARTA -->
+    {{#if this.isCarta}}
     {{#each this.categorias}}
-    <h2>{{this.nombre}}</h2>
-
-    {{#each this.elementos}}
-    <br>
-    <div id="element">{{this.nombre}} </div>
+    <div class="menu-page">
+      <button class="menu-name">{{this.nombre}}</button>
+      <div class="hidden menu-container1">
+        {{#each this.elementos}}
+        <br>
+        <div id="element">{{this.nombre}}</div>
+        <div id="prize"> {{this.precio}} €</div>
+        {{/each}}
+      </div>
+    </div>
     <br>
     {{/each}}
 
+    {{else}}
+    <!--MENU ESPECIAL -->
+    <div class="menuEspecial">
+      <button class="menu-especial">{{this.nombre}} </button>
+      <div class="hidden menu-container">
+        {{#each this.categorias}}
+        <h2>{{this.nombre}}</h2>
+        {{#each this.elementos}}
+        <br>
+        <div id="element">{{this.nombre}} </div>
+        <br>
+        {{/each}}
+        {{/each}}
+        {{this.infoMenu}}
+        <br>
+        {{this.precio}}€
+      </div>
+    </div>
+
+    {{/if}}
     {{/each}}
 
-    {{this.infoMenu}}
-    <br>
-    {{this.precio}}€
+
   </div>
-
-  {{/if}}
-
-  {{/each}}
-
-
-</div>
 </div>
