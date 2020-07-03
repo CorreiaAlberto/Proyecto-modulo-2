@@ -451,7 +451,11 @@ footer {
   border-radius: 15px; }
 
 #prize {
-  text-align: end; }
+  text-align: end;
+  border-bottom: 2px solid cornflowerblue; }
+
+#elementoMenuDisplay {
+  border-bottom: 2px solid cornflowerblue; }
 
 #menu-especial {
   width: 100%;
@@ -526,7 +530,8 @@ footer {
   .loginElement {
     width: 80%; }
   .Button {
-    width: 80%; }
+    width: 80%;
+    margin-bottom: 8px; }
   #errorMessage {
     width: 80%;
     display: block;

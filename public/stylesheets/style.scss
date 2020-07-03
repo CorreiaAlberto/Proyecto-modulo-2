@@ -469,6 +469,7 @@ border: 1px solid black;
 #instructions {
   display: flex;
   flex-direction: column;
+ 
   
   
 }
@@ -568,7 +569,12 @@ border: 1px solid black;
 }
 
 #prize {
-  text-align: end
+  text-align: end;
+  border-bottom: 2px solid cornflowerblue;
+  
+}
+#elementoMenuDisplay {
+  border-bottom: 2px solid cornflowerblue;
 }
 
 //DISPLAY MENU ESPECIAL
@@ -676,6 +682,7 @@ border: 1px solid black;
 
   .Button {
     width: 80%;
+    margin-bottom: 8px
   }
 
   #errorMessage {
